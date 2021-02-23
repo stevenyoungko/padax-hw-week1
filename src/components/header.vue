@@ -1,6 +1,7 @@
 <template>
   <div class="nav">
     <h3 class="nav-title">My Website</h3>
+    <img src="../assets/hamburger.png" alt="" class="nav-burder">
     <div class="nav-list">
       <div class="nav-item">Item1</div>
       <div class="nav-item">Item2</div>
@@ -12,7 +13,12 @@
 
 <script>
   export default {
-    name: 'Header'
+    name: 'Header',
+    data() {
+      return {
+        width: document.querySelector('body').offsetWidth
+      }
+    }
   }
 </script>
 

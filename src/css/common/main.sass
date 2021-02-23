@@ -4,14 +4,22 @@
   align-content: center
   .list
     display: flex
-    width: 1200px
     justify-content: center
     flex-wrap: wrap
+    width: 90%
+    +from($width-600)
+      width: 90%
+    +from($width-1200)
+      width: 1200px
   .item
     padding: 12px
     display: flex
     flex-direction: column
-    width: 276px
+    width: inherit
+    +from($width-600)
+      width: auto
+    +from($width-1200)
+      width: 276px
   .title
     text-align: center
     background-color: aliceblue

@@ -7,6 +7,7 @@
     justify-content: center
     flex-wrap: wrap
     width: 90%
+    margin-top: 16px
     +from($width-600)
       width: 90%
     +from($width-1200)
@@ -20,9 +21,15 @@
       width: 45%
     +from($width-1200)
       width: 276px
+    .image
+      height: 250px
+      width: 100%
   .title
+    margin-top: 0
     text-align: center
     background-color: aliceblue
     font-size: 20px
-    height: 50px
-    line-height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 70px
